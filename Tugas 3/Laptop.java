@@ -4,6 +4,7 @@ class Laptop {
 	private String warna;
 	private String wifi;
 	private int baterai;
+	private int nyala;
 
 	public Laptop(){
 			
@@ -11,6 +12,7 @@ class Laptop {
 		warna = "biru";
 		wifi = "terhubung";	
 		baterai = 60;
+		nyala = 0;
 	}
 	
 
@@ -25,13 +27,15 @@ class Laptop {
 		 wifi = wifiInput;
 		
 	}
-	public Laptop(String merkInput, String warnaInput, String wifiInput, int bateraiInput){
+	public Laptop(String merkInput, String warnaInput, String wifiInput, int bateraiInput, int nyalaInput){
 		 merk = merkInput;
 		 warna = warnaInput ;
 		 wifi = wifiInput;
 		 baterai = bateraiInput ;
+		 nyala = nyalaInput;
 	}
 
+	
 	public void menyala(){
 
 		System.out.println("Welcome to the Laptop");
@@ -82,6 +86,8 @@ class Laptop {
 		return baterai;
 	}
 
+	
+
 	public String setMerk(String merk){
 
 		return this.merk = merk;
@@ -99,4 +105,5 @@ class Laptop {
 
 		return this.baterai=baterai;
 	}
+
 }

@@ -1,24 +1,22 @@
 class TestLaptop{
 
 public static void main(String[] args) {
-		Laptop satu = new Laptop();
-		Laptop dua = new Laptop("Acer","Putih");
-		Laptop tiga = new Laptop("Asus", "Merah", "Tidak Terhubung");
-		Laptop empat = new Laptop("Dell", "Biru", "Terhubung", 90);
+		Laptop lpsatu = new Laptop();
+		Laptop lpdua = new Laptop("Duren","Hitem");
+		Laptop lptiga = new Laptop("Compaq", "Merah", "Tidak Terhubung");
+		Laptop lpempat = new Laptop("Toshiba", "Hitam putih", "Terhubung", 50);
+		Laptop lplima = new Laptop("Alienware","kuning","Terhubung",100,0);
 
-		System.out.println("Laptop Pertama	: Merk = "+ satu.getMerk() +" Warna = "+satu.getWarna()+"	Wifi = "+satu.getWifi()+" 	Baterai = "+satu.getBaterai());
-		System.out.println("Laptop Kedua	: Merk = "+ dua.getMerk() +"	 Warna = "+dua.getWarna()+"	Wifi = "+dua.getWifi()+" 	Baterai = "+dua.getBaterai());
-		System.out.println("Laptop Ketiga	: Merk = "+ tiga.getMerk() +"	 Warna = "+tiga.getWarna()+"	Wifi = "+tiga.getWifi()+" 	Baterai = "+tiga.getBaterai());
-		System.out.println("Laptop Keempat	: Merk = "+ empat.getMerk() +"	 Warna = "+empat.getWarna()+"	Wifi = "+empat.getWifi()+"	Baterai = "+empat.getBaterai());
+		System.out.println("Laptop Satu: Merk = "+ lpsatu.getMerk() +" Warna = "+lpsatu.getWarna()+"	Wifi = "+lpsatu.getWifi()+" 	Baterai = "+lpsatu.getBaterai());
+		System.out.println("Laptop Dua: Merk = "+ lpdua.getMerk() +"	 Warna = "+lpdua.getWarna()+"	Wifi = "+lpdua.getWifi()+" 	Baterai = "+lpdua.getBaterai());
+		System.out.println("Laptop Tiga: Merk = "+ lptiga.getMerk() +"	 Warna = "+lptiga.getWarna()+"	Wifi = "+lptiga.getWifi()+" 	Baterai = "+lptiga.getBaterai());
+		System.out.println("Laptop Empat: Merk = "+ lpempat.getMerk() +"	 Warna = "+lpempat.getWarna()+"	Wifi = "+lpempat.getWifi()+"	Baterai = "+lpempat.getBaterai());
 		
 
-		satu.setWarna("Merah mudaaa");
-		satu.setBaterai(110);
+		lplima.setWarna("Hitam Hijau");lplima.setBaterai(110);
 		
-
-
-		System.out.println("Setelah Setter");
-		System.out.println("Laptop Pertama	: Merk = "+ satu.getMerk() +" Warna = "+satu.getWarna()+" Wifi = "+satu.getWifi()+" Baterai = "+satu.getBaterai());
+		{
+		System.out.println("Laptop: Merk = "+ lplima.getMerk() +" Warna = "+lplima.getWarna()+" Wifi = "+lplima.getWifi()+" Baterai = "+lplima.getBaterai());
 
 		}
 }
