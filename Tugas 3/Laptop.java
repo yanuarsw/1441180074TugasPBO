@@ -4,7 +4,7 @@ class Laptop {
 	private String warna;
 	private String wifi;
 	private int baterai;
-	private int nyala;
+	private String nyala;
 
 	public Laptop(){
 			
@@ -12,13 +12,14 @@ class Laptop {
 		warna = "biru";
 		wifi = "terhubung";	
 		baterai = 60;
-		nyala = 0;
+		nyala = "Mati";
 	}
 	
 
 	public Laptop(String merkInput, String warnaInput){
 		merk = merkInput;
 		warna = warnaInput ;
+		wifi = "terhubung";
 	
 	}
 	public Laptop(String merkInput, String warnaInput, String wifiInput){
@@ -27,13 +28,22 @@ class Laptop {
 		 wifi = wifiInput;
 		
 	}
-	public Laptop(String merkInput, String warnaInput, String wifiInput, int bateraiInput, int nyalaInput){
+	public Laptop(String merkInput, String warnaInput, String wifiInput, int bateraiInput){
+		 merk = merkInput;
+		 warna = warnaInput ;
+		 wifi = wifiInput;
+		 baterai = bateraiInput ;
+		 
+	}
+
+	public Laptop(String merkInput, String warnaInput, String wifiInput, int bateraiInput,String nyalaInput){
 		 merk = merkInput;
 		 warna = warnaInput ;
 		 wifi = wifiInput;
 		 baterai = bateraiInput ;
 		 nyala = nyalaInput;
 	}
+
 
 	
 	public void menyala(){
@@ -86,6 +96,11 @@ class Laptop {
 		return baterai;
 	}
 
+	public String getNyala(){
+
+		return nyala;
+	}
+
 	
 
 	public String setMerk(String merk){
@@ -104,6 +119,10 @@ class Laptop {
 	public int setBaterai(int baterai){
 
 		return this.baterai=baterai;
+	}
+	public String setNyala(String nyala){
+
+		return this.nyala=nyala; 
 	}
 
 }
