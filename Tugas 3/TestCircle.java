@@ -7,6 +7,8 @@ public static void main(String[] args) {
 
 		
 
+		
+		
 		System.out.println("Radius = "+ centa.getRadius() +" Color = "+centa.getColor()+" Luas = "+centa.getArea());
 		System.out.println("Radius = "+ morphling.getRadius() +" Color = "+morphling.getColor()+" Luas = "+morphling.getArea());
 		System.out.println("Radius = "+ djarot.getRadius() +" Color = "+djarot.getColor()+" Luas = "+djarot.getArea());
