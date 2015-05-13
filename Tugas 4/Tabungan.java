@@ -42,6 +42,7 @@ class  Tabungan {
 		bunga		=2;
 	}
 
+	int r = (int) (Math.random()*500000);
 
 	//menabung
 	public void nabung(int nabung){
@@ -57,15 +58,18 @@ class  Tabungan {
 	//transfer
 	public void transfer(int transfer){
 
-		transfer = simpanan - transfer; 
+			simpanan = simpanan - transfer; 
+		
+		System.out.println(" Jumlah Saldo anda saat ini\t: "+simpanan);
 	}
 
 	// menerima transfer
-	int r = (int) (Math.random()*500.000);
 	public void terima(){
 
+		System.out.println(" Jumlah Saldo anda saat ini\t: "+simpanan);
 		simpanan = simpanan + r;
-		System.out.print(" Jumlah yang anda terima: "+simpanan);
+		System.out.println(" Jumlah yang anda terima\t: "+r);
+		System.out.println(" Jumlah Saldo anda saat ini\t: "+simpanan);
 	}
 
 	//ceksaldo

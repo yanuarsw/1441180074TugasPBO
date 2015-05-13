@@ -41,6 +41,7 @@ class TestTabungan {
 			break;
 
 			case 3 :
+
 			System.out.println("Silakan masukan jumlah yang akan anda transfer: ");
 			int transfer = in.nextInt();
 			ku.transfer(transfer);
